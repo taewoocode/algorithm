@@ -2,6 +2,8 @@
 unique 함수를 써서 중복 제거
 중복되지 않는 배열을 먼저 만들고 나머지 2,3,3을 채운다.
 
+v.erase[from, to)
+
 */
 
 #include<bits/stdc++.h>
