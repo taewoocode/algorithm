@@ -11,6 +11,13 @@ void f(vector<int> &v){
     v.erase(unique(v.begin(), v.end()), v.end());
 }
 
+void ff(vector<int> &v){
+    // v.erase(unique(v.begin(), v.end()), v.end());
+    v = {2,2,1,1,1,1,2,2,3,3,5,6,7,8,9};
+    sort(v.begin(), v.end());
+    v.erase(unique(v.begin(), v.end()), v.end());    
+}
+
 
 int main(){
     vector<int> v {1,1,2,2,3,3};
@@ -19,6 +26,9 @@ int main(){
     cout << '\n';
     cout << "다음" << '\n';
     f(v);
+    for(int i : v) cout << i << ' ';
+    cout << '\n';
+    ff(v);
     for(int i : v) cout << i << ' ';
     return 0;
 }
